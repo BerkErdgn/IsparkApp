@@ -6,8 +6,7 @@ import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
-import androidx.navigation.navigation
-import com.berkerdgn.isparkapp.BottomBarScreen
+import com.berkerdgn.isparkapp.presentation.bottom_bar_screen.BottomBarScreen
 
 @Composable
 fun HomeNavGraph(navController: NavHostController) {

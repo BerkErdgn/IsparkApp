@@ -1,4 +1,4 @@
-package com.berkerdgn.isparkapp
+package com.berkerdgn.isparkapp.presentation.bottom_bar_screen
 
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Home

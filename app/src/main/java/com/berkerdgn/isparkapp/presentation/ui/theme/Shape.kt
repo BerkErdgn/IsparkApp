@@ -1,4 +1,4 @@
-package com.berkerdgn.isparkapp.ui.theme
+package com.berkerdgn.isparkapp.presentation.ui.theme
 
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Shapes

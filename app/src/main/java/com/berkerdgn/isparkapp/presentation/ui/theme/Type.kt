@@ -1,4 +1,4 @@
-package com.berkerdgn.isparkapp.ui.theme
+package com.berkerdgn.isparkapp.presentation.ui.theme
 
 import androidx.compose.material.Typography
 import androidx.compose.ui.text.TextStyle

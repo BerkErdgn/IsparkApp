@@ -1,4 +1,4 @@
-package com.berkerdgn.isparkapp
+package com.berkerdgn.isparkapp.presentation
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -12,7 +12,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.compose.rememberNavController
 import com.berkerdgn.isparkapp.graphs.RootNavigationGraph
-import com.berkerdgn.isparkapp.ui.theme.IsparkAppTheme
+import com.berkerdgn.isparkapp.presentation.ui.theme.IsparkAppTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

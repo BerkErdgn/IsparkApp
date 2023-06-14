@@ -12,6 +12,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import com.berkerdgn.isparkapp.graphs.HomeNavGraph
+import com.berkerdgn.isparkapp.presentation.bottom_bar_screen.BottomBarScreen
 
 @SuppressLint("UnusedMaterialScaffoldPaddingParameter")
 @Composable
