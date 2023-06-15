@@ -7,6 +7,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import com.berkerdgn.isparkapp.presentation.bottom_bar_screen.BottomBarScreen
+import com.berkerdgn.isparkapp.presentation.ispark_list.view.IsparksScreen
 
 @Composable
 fun HomeNavGraph(navController: NavHostController) {
@@ -15,10 +16,7 @@ fun HomeNavGraph(navController: NavHostController) {
             startDestination = BottomBarScreen.Home.route
         ){
         composable( route = BottomBarScreen.Home.route){
-            Text(text = "Home")
-            Button(onClick = { navController.navigate(Graph.DETAIL) }) {
-                Text(text = "ileri")
-            }
+            IsparksScreen(navController = navController)
         }
         composable(route = BottomBarScreen.Save.route){
             Text(text = "save")

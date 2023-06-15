@@ -8,6 +8,7 @@ import androidx.navigation.NavGraphBuilder
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.composable
 import androidx.navigation.navigation
+import com.berkerdgn.isparkapp.presentation.splash_secreen.SplashScreen
 
 
 fun NavGraphBuilder.splashScreenGraph(navController: NavHostController) {
@@ -16,10 +17,7 @@ fun NavGraphBuilder.splashScreenGraph(navController: NavHostController) {
         startDestination = SplashScreen.FirstSplash.route
     ){
         composable(route = SplashScreen.FirstSplash.route){
-            Text(text = "splash Screen")
-            Button(onClick ={ navController.navigate(Graph.HOME)}) {
-                Text(text = "Home")
-            }
+            SplashScreen(navController = navController)
         }
     }
 }
