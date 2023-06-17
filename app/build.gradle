@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'com.google.android.libraries.mapsplatform.secrets-gradle-plugin'
     id 'kotlin-kapt'
     id 'dagger.hilt.android.plugin'
 }
@@ -64,6 +65,35 @@ dependencies {
     debugImplementation "androidx.compose.ui:ui-test-manifest:$compose_ui_version"
 
 
+
+    // Need this or MapEffect throws exception.
+    implementation "androidx.appcompat:appcompat:1.5.1"
+
+
+    // Google maps
+    implementation 'com.google.android.gms:play-services-maps:18.1.0'
+    implementation 'com.google.android.gms:play-services-location:21.0.1'
+
+
+
+
+    // Google maps for compose
+    implementation 'com.google.maps.android:maps-compose:2.8.0'
+
+    // KTX for the Maps SDK for Android
+    implementation 'com.google.maps.android:maps-ktx:3.2.1'
+    // KTX for the Maps SDK for Android Utility Library
+    implementation 'com.google.maps.android:maps-utils-ktx:3.2.1'
+
+
+
+
+
+    //for Google Maps
+    implementation 'com.google.maps.android:maps-compose:2.11.4'
+    implementation 'com.google.android.gms:play-services-maps:18.1.0'
+
+
     // Compose dependencies
     implementation "androidx.lifecycle:lifecycle-viewmodel-compose:2.6.1"
     implementation "androidx.navigation:navigation-compose:2.6.0-rc01"
@@ -98,5 +128,12 @@ dependencies {
 
     //Lottie in Compose
     implementation 'com.airbnb.android:lottie-compose:4.2.0'
+
+
+    //Room
+    implementation "androidx.room:room-runtime:2.5.0"
+    kapt "androidx.room:room-compiler:2.5.0"
+    implementation "androidx.room:room-ktx:2.5.0"
+
 
 }

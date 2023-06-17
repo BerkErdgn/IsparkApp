@@ -33,7 +33,6 @@ fun IsparkViewListRow(
             .padding(7.dp)
             .background(customWhite)
             .clickable {
-                DetailsScreen.Information.route
                 navController.navigate(DetailsScreen.Information.route+"/${ispark.parkID}")
             },
 
