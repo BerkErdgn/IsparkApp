@@ -3,6 +3,7 @@ package com.berkerdgn.isparkapp.presentation.bottom_bar_screen
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Home
 import androidx.compose.material.icons.filled.Person
+import androidx.compose.material.icons.filled.Star
 import androidx.compose.ui.graphics.vector.ImageVector
 
 
@@ -20,7 +21,7 @@ sealed class BottomBarScreen(
     object Save : BottomBarScreen(
         route = "Save",
         title = "Save",
-        icon = Icons.Default.Person
+        icon = Icons.Default.Star
     )
 
 }

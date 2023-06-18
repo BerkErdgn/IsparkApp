@@ -1,10 +1,13 @@
 package com.berkerdgn.isparkapp
 
 import android.annotation.SuppressLint
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.RowScope
 import androidx.compose.material.*
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.navigation.NavDestination
 import androidx.navigation.NavDestination.Companion.hierarchy
 import androidx.navigation.NavGraph.Companion.findStartDestination
@@ -13,6 +16,7 @@ import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import com.berkerdgn.isparkapp.graphs.HomeNavGraph
 import com.berkerdgn.isparkapp.presentation.bottom_bar_screen.BottomBarScreen
+import com.berkerdgn.isparkapp.presentation.ui.theme.customBlue
 
 @SuppressLint("UnusedMaterialScaffoldPaddingParameter")
 @Composable
@@ -58,6 +62,7 @@ fun RowScope.AddItem(
     navController: NavHostController
 ) {
     BottomNavigationItem(
+        modifier = Modifier.background(customBlue),
         label = {
           Text(text = screen.title)
         },

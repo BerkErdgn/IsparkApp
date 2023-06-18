@@ -10,6 +10,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
+import com.berkerdgn.isparkapp.AppName
 import com.berkerdgn.isparkapp.presentation.ispark_list.IsparksViewModel
 
 
@@ -22,12 +23,14 @@ fun IsparksScreen(
     val state = viewModel.state.value
 
 
+
     Box(modifier = Modifier
         .fillMaxWidth()
         .padding(5.dp)
     ){
         Column {
-            LazyColumn(modifier = Modifier.fillMaxSize()){
+            AppName()
+            LazyColumn(modifier = Modifier.fillMaxWidth()){
                 items(state.isparks){
                     IsparkViewListRow( ispark = it, navController = navController)
                 }
