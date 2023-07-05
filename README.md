@@ -6,6 +6,7 @@ This application is a phone application that provides information about the loca
 
 ## Technologies Used
 - Jetpack Compose
+- Flow
 - Clean Architecture
 - Google maps
 - Corutines
